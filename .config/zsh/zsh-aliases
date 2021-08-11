@@ -24,3 +24,18 @@ alias psmem='ps auxf | sort -nr -k 4 | head -5'
 
 # get top process eating cpu ##
 alias pscpu='ps auxf | sort -nr -k 3 | head -5'
+
+#git
+alias gaa='git add .'
+alias gcm='git commit -am'
+alias gs='git status'
+alias gl='git log --color --graph --pretty=format:"%Cred%h%Creset %Cgreen(%cr) %C(bold blue)<%an>%Creset -%C(yellow)%d%Creset %s" --abbrev-commit'
+alias gi='git init'
+alias gc='git checkout'
+alias gcb='git checkout -b'
+alias gfetch='git fetch'
+alias unstage='git reset'
+gpush() {
+  git push -u origin $1
+}
+
